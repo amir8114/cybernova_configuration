@@ -44,17 +44,17 @@ if [ ! -d "config" ]; then
 fi
 
 # Download the new configuration files
-curl -o server.properties https://raw.githubusercontent.com/amir8114/cybernova_configuration/refs/heads/main/latest/server.properties
-curl -o spigot.yml https://raw.githubusercontent.com/amir8114/cybernova_configuration/refs/heads/main/latest/spigot.yml
-curl -o purpur.yml https://github.com/amir8114/cybernova_configuration/raw/refs/heads/main/latest/purpur.yml
-curl -o pufferfish.yml https://github.com/amir8114/cybernova_configuration/raw/refs/heads/main/latest/pufferfish.yml
-curl -o eula.txt https://github.com/amir8114/cybernova_configuration/raw/refs/heads/main/latest/eula.txt
-curl -o bukkit.yml https://github.com/amir8114/cybernova_configuration/raw/refs/heads/main/latest/bukkit.yml
+curl -o server.properties https://cybernova.hr/server.properties
+curl -o spigot.yml https://cybernova.hr/spigot.yml
+curl -o purpur.yml https://cybernova.hr/purpur.yml
+curl -o pufferfish.yml https://cybernova.hr/pufferfish.yml
+curl -o eula.txt https://cybernova.hr/eula.txt
+curl -o bukkit.yml https://cybernova.hr/bukkit.yml
 
 # Create the config directory and download additional configuration files
 mkdir -p config
 
-curl -o config/paper-global.yml https://github.com/amir8114/cybernova_configuration/raw/refs/heads/main/latest/config/paper-global.yml
-curl -o config/paper-world-defaults.yml https://github.com/amir8114/cybernova_configuration/raw/refs/heads/main/latest/config/paper-world-defaults.yml
+curl -o config/paper-global.yml https://cybernova.hr/paper-global.yml
+curl -o config/paper-world-defaults.yml https://cybernova.hr/paper-world-defaults.yml
 
 printf "All configuration files downloaded successfully.\n"
